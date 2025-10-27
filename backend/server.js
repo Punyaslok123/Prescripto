@@ -24,9 +24,9 @@ app.use(express.json())
 
 // for deployment 
 const allowedOrigins = [
-  // This will be your deployed Vercel domain for the main frontend (e.g., https://prescripto-main.vercel.app)
+  // This will be our deployed Vercel domain for the main frontend (e.g., https://prescripto-main.vercel.app)
   process.env.FRONTEND_URL,
-  // This will be your deployed Vercel domain for the admin panel (e.g., https://prescripto-admin.vercel.app)
+  // This will be our deployed Vercel domain for the admin panel (e.g., https://prescripto-admin.vercel.app)
   process.env.ADMIN_URL,
   // Local development fallbacks
   "http://localhost:5173",
