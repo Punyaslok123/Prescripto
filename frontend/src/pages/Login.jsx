@@ -35,7 +35,7 @@ const Login = () => {
 
          // if we are in the sign up state ,then call the register api 
          
-        if(state==='sign Up') {
+        if(state==='Sign Up') {
               const {data}= await axios.post(backendUrl + '/api/user/register',{name,password,email})
 
               if(data.success){
