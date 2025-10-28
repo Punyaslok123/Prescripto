@@ -97,6 +97,8 @@ const MyAppointment = () => {
     // razorpay payment 
 
     const initPay= (order) =>{
+
+      console.log("razorpay id is", import.meta.env.VITE_RAZORPAY_KEY_ID);
          
       // we will create the options using the order
       
