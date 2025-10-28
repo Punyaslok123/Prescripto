@@ -179,7 +179,7 @@ const doctorDashboard = async (req,res) => {
            appointments.map((item)=>{
                    if(!patients.includes(item.userId))  patients.push(item.userId)
            })
-
+          
            // create the dashboard data 
 
            const dashData  = {
