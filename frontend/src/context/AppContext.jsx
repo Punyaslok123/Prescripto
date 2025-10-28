@@ -25,6 +25,10 @@ const AppContextProvider=(props)=>{
 
   const backendUrl = import.meta.env.VITE_BACKEND_URL;
 
+  if(!backendUrl) {
+      console.log("backend url is not set");
+  }
+
   // call api for all doctors from the database
 
   const getDoctorsData = async () => {
